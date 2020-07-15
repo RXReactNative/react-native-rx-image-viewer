@@ -47,7 +47,7 @@ import {
 	ActivityIndicator
 } from 'react-native';
 
-import RXImageViewer from '../package';
+import RXImageViewer from '../package/index'
 
 export default class Preview extends Component {
   static propTypes = {

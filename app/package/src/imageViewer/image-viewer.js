@@ -10,7 +10,7 @@ import {
   Text,
   Image,
   Animated,
-  CameraRoll,
+  // CameraRoll,
   I18nManager,
   TouchableOpacity,
   TouchableHighlight,
@@ -18,6 +18,8 @@ import {
   UIManager,
   findNodeHandle
 } from 'react-native';
+
+import CameraRoll from "@react-native-community/cameraroll";
 
 import RXImageViewerStyle from '../api/image-pan-zoom-style';
 import ImageZoom from '../zoom/image-zoom';

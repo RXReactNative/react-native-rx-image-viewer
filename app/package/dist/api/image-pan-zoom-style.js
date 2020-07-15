@@ -1,5 +1,12 @@
+'use strict';
+
+import React from "react";
+import { View } from 'react-native';
 
 const DEFAULT_CONFIG = {
+  // react-native-web 平台使用的
+  otherImageViewr: React.createElement(View, null),
+
   imageViewer: {
     // 下面是 imageView 使用的配置
     underlayColor: '#F2F2F2',
@@ -8,7 +15,7 @@ const DEFAULT_CONFIG = {
     phoneBottom: 40,
 
     // 可以替换 image-viewer.style.js
-    ImageStyles: null,
+    ImageStyles: null
   },
   zoom: { // 3 种 配置样式，可以配合使用
 
@@ -24,12 +31,10 @@ const DEFAULT_CONFIG = {
 
     // 3. 可以替换 image-zoom.style.js
     styles: { // 可以不用上面的配置，可以自定义
-      container : null,
-    },
+      container: null
+    }
   }
-}
-
-
+};
 
 export default class RXImageViewerStyle {
   static get store() {
@@ -39,10 +44,11 @@ export default class RXImageViewerStyle {
     return this._store;
   }
 
-  static initApi (config) {
+  static initApi(config) {
     if (!config) {
       throw new Error('RXImageViewerStyle -> initApi() -> config=null');
     }
-    Object.assign(this.store, config)
+    Object.assign(this.store, config);
   }
 }
+//# sourceMappingURL=image-pan-zoom-style.js.map

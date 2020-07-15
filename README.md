@@ -9,8 +9,8 @@
 #### react-native-web
 
 # demo
-## iOS >=10
-## android
+#### iOS >=10
+#### android
 
 # app
 ```sh
@@ -31,4 +31,13 @@ sh script/iosDebug.sh
 
   # build
   npm run build
+```
+
+## iOS Cocoapods
+```sh
+# rvm install
+# https://www.jianshu.com/p/9c9f8d4867eb
+
+# Cocoapods install
+# https://www.jianshu.com/p/9e4e36ba8574
 ```
